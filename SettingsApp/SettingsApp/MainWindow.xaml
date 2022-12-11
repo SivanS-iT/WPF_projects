@@ -8,27 +8,31 @@
         Title="Application Settings" Height="541" Width="450" Background="#FF3A3939" Foreground="White">
 
     <Grid Margin="10,10,10,10">
-        <TextBlock HorizontalAlignment="Left" Margin="35,64,0,0" TextWrapping="Wrap" Text="Company title:" VerticalAlignment="Top" RenderTransformOrigin="-0.247,-0.288" Width="110" FontSize="15"/>
-        <TextBox HorizontalAlignment="Left" Margin="162,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Background="#FF525252" BorderBrush="#FFB1B4BF" Foreground="#FFF1F1F1" FontSize="13" Height="23" TextBlock.FontSize="15"/>
-        <TextBlock HorizontalAlignment="Left" Margin="35,95,0,0" TextWrapping="Wrap" Text="Job title:" VerticalAlignment="Top" RenderTransformOrigin="-0.247,-0.288" Width="110" FontSize="15"/>
-        <TextBox HorizontalAlignment="Left" Margin="162,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Background="#FF525252" BorderBrush="#FFB1B4BF" Foreground="#FFF1F1F1" FontSize="13" Height="23" TextBlock.FontSize="15"/>
-        <TextBlock HorizontalAlignment="Left" Margin="35,126,0,0" TextWrapping="Wrap" Text="Job description:" VerticalAlignment="Top" RenderTransformOrigin="-0.247,-0.288" Width="110" FontSize="15"/>
-        <TextBox HorizontalAlignment="Left" Margin="162,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Background="#FF525252" BorderBrush="#FFB1B4BF" Foreground="#FFF1F1F1" FontSize="13" Height="84" TextBlock.FontSize="15"/>
-        <TextBlock HorizontalAlignment="Left" Margin="35,220,0,0" TextWrapping="Wrap" Text="Mobile:" VerticalAlignment="Top" RenderTransformOrigin="-0.247,-0.288" Width="110" FontSize="15"/>
-        <TextBox HorizontalAlignment="Left" Margin="162,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Background="#FF525252" BorderBrush="#FFB1B4BF" Foreground="#FFF1F1F1" FontSize="13" Height="23" TextBlock.FontSize="15"/>
-        <TextBlock HorizontalAlignment="Left" Margin="35,251,0,0" TextWrapping="Wrap" Text="Address:" VerticalAlignment="Top" RenderTransformOrigin="-0.247,-0.288" Width="110" FontSize="15"/>
-        <TextBox HorizontalAlignment="Left" Margin="162,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Background="#FF525252" BorderBrush="#FFB1B4BF" Foreground="#FFF1F1F1" FontSize="13" Height="23" TextBlock.FontSize="15"/>
-        <TextBlock HorizontalAlignment="Left" Margin="35,282,0,0" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top" RenderTransformOrigin="-0.247,-0.288" Width="110" FontSize="15"/>
-        <TextBox HorizontalAlignment="Left" Margin="162,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Background="#FF525252" BorderBrush="#FFB1B4BF" Foreground="#FFF1F1F1" FontSize="13" Height="23" TextBlock.FontSize="15"/>
-        <TextBlock HorizontalAlignment="Left" Margin="35,313,0,0" TextWrapping="Wrap" Text="WebSite:" VerticalAlignment="Top" RenderTransformOrigin="-0.247,-0.288" Width="110" FontSize="15"/>
-        <TextBox HorizontalAlignment="Left" Margin="162,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242" Background="#FF525252" BorderBrush="#FFB1B4BF" Foreground="#FFF1F1F1" FontSize="13" Height="23" TextBlock.FontSize="15"/>
-        <TextBlock HorizontalAlignment="Left" Margin="35,347,0,0" TextWrapping="Wrap" Text="Language:" VerticalAlignment="Top" RenderTransformOrigin="-0.247,-0.288" Width="110" FontSize="15"/>
-        <ComboBox HorizontalAlignment="Left" Margin="162,344,0,0" VerticalAlignment="Top" Width="242" Height="23" FontSize="13" IsReadOnly="True" Visibility="Visible" Foreground="#FF2B2B2B" SelectedIndex="0" IsSynchronizedWithCurrentItem="False" AutomationProperties.IsOffscreenBehavior="Default" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="140"/>
+            <ColumnDefinition Width="29*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Margin="0,64,0,0" TextWrapping="Wrap" Text="Company title:" VerticalAlignment="Top" RenderTransformOrigin="-0.247,-0.288" FontSize="15" Height="20" HorizontalAlignment="Right" Width="110"/>
+        <TextBox Margin="15,61,26,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FF525252" BorderBrush="#FFB1B4BF" Foreground="#FFF1F1F1" FontSize="13" Height="23" TextBlock.FontSize="15" TabIndex="0" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,95,0,0" TextWrapping="Wrap" Text="Job title:" VerticalAlignment="Top" RenderTransformOrigin="-0.247,-0.288" Width="110" FontSize="15" Height="20"/>
+        <TextBox Margin="15,92,26,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FF525252" BorderBrush="#FFB1B4BF" Foreground="#FFF1F1F1" FontSize="13" Height="23" TextBlock.FontSize="15" TabIndex="1" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,126,0,0" TextWrapping="Wrap" Text="Job description:" VerticalAlignment="Top" RenderTransformOrigin="-0.247,-0.288" Width="110" FontSize="15" Height="20"/>
+        <TextBox Margin="15,123,26,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FF525252" BorderBrush="#FFB1B4BF" Foreground="#FFF1F1F1" FontSize="13" Height="84" TextBlock.FontSize="15" TabIndex="2" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,220,0,0" TextWrapping="Wrap" Text="Mobile:" VerticalAlignment="Top" RenderTransformOrigin="-0.247,-0.288" Width="110" FontSize="15" Height="20"/>
+        <TextBox Margin="15,217,26,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FF525252" BorderBrush="#FFB1B4BF" Foreground="#FFF1F1F1" FontSize="13" Height="23" TextBlock.FontSize="15" TabIndex="3" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,251,0,0" TextWrapping="Wrap" Text="Address:" VerticalAlignment="Top" RenderTransformOrigin="-0.247,-0.288" Width="110" FontSize="15" Height="20"/>
+        <TextBox Margin="15,248,26,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FF525252" BorderBrush="#FFB1B4BF" Foreground="#FFF1F1F1" FontSize="13" Height="23" TextBlock.FontSize="15" TabIndex="4" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,282,0,0" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top" RenderTransformOrigin="-0.247,-0.288" Width="110" FontSize="15" Height="20"/>
+        <TextBox Margin="15,279,26,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FF525252" BorderBrush="#FFB1B4BF" Foreground="#FFF1F1F1" FontSize="13" Height="23" TextBlock.FontSize="15" TabIndex="5" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,313,0,0" TextWrapping="Wrap" Text="WebSite:" VerticalAlignment="Top" RenderTransformOrigin="-0.247,-0.288" Width="110" FontSize="15" Height="20"/>
+        <TextBox Margin="15,310,26,0" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FF525252" BorderBrush="#FFB1B4BF" Foreground="#FFF1F1F1" FontSize="13" Height="23" TextBlock.FontSize="15" TabIndex="6" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,347,0,0" TextWrapping="Wrap" Text="Language:" VerticalAlignment="Top" RenderTransformOrigin="-0.247,-0.288" Width="110" FontSize="15" Height="20"/>
+        <ComboBox Margin="15,344,26,0" VerticalAlignment="Top" Height="23" FontSize="13" IsReadOnly="True" Visibility="Visible" Foreground="#FF2B2B2B" SelectedIndex="0" IsSynchronizedWithCurrentItem="False" AutomationProperties.IsOffscreenBehavior="Default" HorizontalContentAlignment="Left" VerticalContentAlignment="Top" TabIndex="7" Grid.Column="1" >
             <ComboBoxItem Content="English"/>
             <ComboBoxItem Content="Croatian"/>
             <ComboBoxItem Content="Deutsch"/>
         </ComboBox>
-        <Button Content="Save Changes" BorderThickness="1.5" HorizontalAlignment="Left" Margin="162,415,0,0" VerticalAlignment="Top" Height="39" Width="242" Background="#FFB3B3B3" BorderBrush="Black" FontSize="16" Foreground="Black" FontWeight="Bold"/>
+        <Button Content="Save Changes" BorderThickness="1.5" HorizontalAlignment="Center" Margin="0,415,0,0" Width="242" Background="#FFB3B3B3" BorderBrush="Black" FontSize="16" Foreground="Black" FontWeight="Bold" TabIndex="8" Height="39" VerticalAlignment="Top" Grid.Column="1"/>
 
     </Grid>
 </Window>
